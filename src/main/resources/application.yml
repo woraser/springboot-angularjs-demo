@@ -3,6 +3,14 @@ contacts:
     storage: etc/photos
     resize-width: 150
     resize-height: 150
+    
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: validate
+
+flyway:
+  enabled: true
 
 security:
   user:

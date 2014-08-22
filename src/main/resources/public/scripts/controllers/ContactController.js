@@ -47,7 +47,7 @@ app.controller('ContactController', function($scope, $rootScope, $location, $htt
             page = 0;
         }
         
-        var PAGE_SIZE = 24;
+        var PAGE_SIZE = 200;
         $scope.page = page;
         $scope.isLoading = true;
         $http.get('rest/contacts?keyword=' + $scope.keyword + '&page=' + $scope.page + '&pageSize=' + PAGE_SIZE)

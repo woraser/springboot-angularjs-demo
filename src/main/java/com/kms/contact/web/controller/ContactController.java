@@ -36,7 +36,7 @@ public class ContactController extends BaseController {
     public List<Contact> searchContacts(
             @RequestParam(defaultValue="") String keyword, 
             @RequestParam(defaultValue="0") int page, 
-            @RequestParam(defaultValue="10") int pageSize) {
+            @RequestParam(defaultValue="200") int pageSize) {
         traceAction("search contacts, keyword: " + keyword);
         return contactService.searchContacts(keyword, page, pageSize);
     }
